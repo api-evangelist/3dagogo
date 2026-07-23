@@ -1,0 +1,28 @@
+generated: '2026-07-17'
+method: searched
+source: >-
+  AstroPrint developer documentation, the OAuth 2.0 forum guide, and live
+  probing of https://api.astroprint.com/v2 and the /.well-known/ surface. No
+  public OpenAPI is published; conformance is asserted from documented behavior
+  and probe evidence.
+standards:
+  - id: oauth2
+    conforms: true
+    evidence: >-
+      The AstroPrint Cloud API is protected by OAuth 2.0 with a token endpoint at
+      https://api.astroprint.com/v2/token supporting client_credentials and
+      authorization_code grants.
+  - id: oidc
+    conforms: false
+    evidence: >-
+      No /.well-known/openid-configuration on any AstroPrint host (all probes
+      returned 404); no OIDC discovery is published.
+  - id: rfc9457
+    conforms: false
+    evidence: No application/problem+json error format is documented.
+  - id: idempotency
+    conforms: false
+    evidence: No idempotency-key mechanism is documented.
+  - id: pagination
+    conforms: false
+    evidence: No standard pagination convention is documented.

@@ -1,7 +1,29 @@
 aid: 3dagogo
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/3dagogo.png
 name: 3DaGoGo
-description: 3DaGoGo is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  3DaGoGo, Inc. is a San Diego based technology company and the maker of
+  AstroPrint, a cloud platform for consumer and professional 3D printing.
+  AstroPrint provides browser-based cloud slicing, AI-powered model generation
+  from text prompts, remote WiFi printer control, live video print monitoring,
+  print-queue management, multi-user access controls, and analytics, serving
+  more than 260,000 users across 130+ countries with over 5 million objects
+  printed. AstroPrint exposes an OAuth 2.0 protected REST API
+  (api.astroprint.com/v2) plus a client-side 3D Print API so third parties can
+  build applications on top of the platform. 3DaGoGo was surfaced as a portfolio
+  company of 500 Global and has been enriched from its public developer surface.
 url: https://raw.githubusercontent.com/api-evangelist/3dagogo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,12 +36,73 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
-apis: []
+- 3D Printing
+- Cloud
+- Manufacturing
+- IoT
+- Developer API
+- OAuth
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: AstroPrint Cloud API
+  description: >-
+    OAuth 2.0 protected REST API for the AstroPrint cloud 3D printing platform.
+    Manage printers, designs, and print jobs. Confirmed live:
+    https://api.astroprint.com/v2/printers returns HTTP 401 without a token.
+  humanURL: https://developer.astroprint.com/
+  baseURL: https://api.astroprint.com/v2
+  tags:
+  - 3D Printing
+  - REST
+  - OAuth
+  properties:
+  - type: Authentication
+    url: authentication/3dagogo-authentication.yml
+  - type: Conventions
+    url: conventions/3dagogo-conventions.yml
+  - type: Lifecycle
+    url: lifecycle/3dagogo-lifecycle.yml
+  - type: Conformance
+    url: conformance/3dagogo-conformance.yml
+  - type: WellKnown
+    url: well-known/3dagogo-well-known.yml
 common:
+- type: DomainSecurity
+  url: security/3dagogo-domain-security.yml
 - type: Website
-  url: https://astroprint.com
+  url: https://www.astroprint.com
+- type: DeveloperPortal
+  url: https://developer.astroprint.com/
+- type: Documentation
+  url: https://astroprint.github.io/3d-print-api-sample/
+- type: APIReference
+  url: https://astroprint.github.io/3d-print-api-sample/
+- type: Blog
+  url: https://blog.astroprint.com/
+- type: GitHubOrganization
+  url: https://github.com/astroprint
+- type: Support
+  url: https://astroprint.zendesk.com/hc/en-us
+- type: Forum
+  url: https://forum.astroprint.com/
+- type: SignUp
+  url: https://cloud.astroprint.com/account/signup
+- type: Pricing
+  url: https://www.astroprint.com/plans-and-pricing
+- type: StatusPage
+  url: https://astroprint.statuspage.io
+- type: Packages
+  url: packages/3dagogo-packages.yml
+- type: SDKs
+  url: packages/3dagogo-packages.yml
+- type: LLMsTxt
+  url: llms/3dagogo-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

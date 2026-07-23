@@ -1,0 +1,42 @@
+generated: '2026-07-17'
+method: searched
+source: >-
+  AstroPrint developer portal (https://developer.astroprint.com), the OAuth
+  forum guide, and live probing of https://api.astroprint.com/v2. No public
+  OpenAPI is published; cross-cutting semantics are captured from the docs and
+  observed API behavior.
+description: >-
+  Cross-cutting request/response conventions for the AstroPrint Cloud API — the
+  developer-experience semantics that apply across operations.
+base_url: https://api.astroprint.com/v2
+api_style: REST over HTTPS, JSON responses
+authentication:
+  scheme: OAuth 2.0 Bearer token (client_credentials and authorization_code grants)
+  token_endpoint: https://api.astroprint.com/v2/token
+  detail: authentication/3dagogo-authentication.yml
+versioning:
+  style: uri-path
+  current: v2
+  mechanism: Major version pinned in the URL path (/v2/...)
+  detail: lifecycle/3dagogo-lifecycle.yml
+idempotency:
+  supported: unknown
+  note: AstroPrint does not document an idempotency-key mechanism.
+pagination:
+  style: unknown
+  note: No public pagination convention is documented.
+error_envelope:
+  format: unknown
+  note: No public error-format reference is published; the API returns standard HTTP status codes (e.g. 401 for missing/invalid tokens).
+rate_limiting:
+  documented: false
+realtime:
+  boxrouter:
+    transport: Secure WebSocket (wss)
+    host: boxrouter.astroprint.com
+    port: 443
+    note: >-
+      Printer/device control is delivered over a persistent Secure WebSocket
+      connection to the BoxRouter, separate from the REST API. Documented in the
+      AstroBox source (github.com/AstroPrint/AstroBox); not a documented public
+      webhook/event catalog.

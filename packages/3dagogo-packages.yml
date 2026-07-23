@@ -1,0 +1,41 @@
+generated: '2026-07-17'
+method: searched
+source: >-
+  AstroPrint GitHub organization (https://github.com/astroprint) and the 3D
+  Print API documentation (https://astroprint.github.io/3d-print-api-sample/).
+  Registry search performed against npm and PyPI: the npm package "astroprint"
+  is an unrelated third-party Astro documentation integration and is NOT
+  first-party AstroPrint. First-party client tooling is distributed via GitHub.
+description: >-
+  First-party AstroPrint client libraries and tools. AstroPrint does not publish
+  a language SDK to npm/PyPI; the first-party client surface is a browser
+  JavaScript import library for the 3D Print API plus open-source device/plugin
+  software.
+packages:
+  - language: javascript
+    registry: github
+    name: astroprint.import.js (3D Print API client)
+    url: https://astroprint.github.io/3d-print-api-sample/
+    source: https://github.com/AstroPrint/3d-print-api-sample
+    loader: https://cloud.astroprint.com/js/min/lib/astroprint.import.js
+    install: Include the astroprint.import.js loader script in the page.
+    official: true
+    note: >-
+      First-party client-side JavaScript library that injects STL/ZIP designs
+      into AstroPrint user accounts (importDesign / importDesignByBlob).
+  - language: python
+    registry: github
+    name: OctoPrint-AstroPrint
+    url: https://github.com/AstroPrint/OctoPrint-AstroPrint
+    source: https://github.com/AstroPrint/OctoPrint-AstroPrint
+    install: OctoPrint Plugin Manager (not published to PyPI)
+    official: true
+    note: First-party OctoPrint plugin connecting an OctoPrint device to the AstroPrint Cloud.
+  - language: python
+    registry: github
+    name: AstroBox
+    url: https://github.com/AstroPrint/AstroBox
+    source: https://github.com/AstroPrint/AstroBox
+    install: git clone / device image
+    official: true
+    note: First-party open-source software (AGPL-3.0) to control a 3D printer wirelessly and connect it to the AstroPrint Cloud.

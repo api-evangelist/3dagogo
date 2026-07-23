@@ -1,0 +1,29 @@
+generated: '2026-07-17'
+method: searched
+source: >-
+  AstroPrint developer portal, status page (https://astroprint.statuspage.io),
+  support/help center (https://astroprint.zendesk.com), and the community forum
+  (https://forum.astroprint.com). Confirmed API host at
+  https://api.astroprint.com/v2.
+versioning:
+  scheme: uri-path major version
+  mechanism: The major API version is pinned in the URL path (currently /v2).
+  current: v2
+  example: https://api.astroprint.com/v2/printers
+  notes: >-
+    AstroPrint exposes a v2 REST surface at api.astroprint.com/v2. No
+    date-based or header-based versioning is documented.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: >-
+    No public deprecation policy and no RFC 8594 Sunset/Deprecation header usage
+    is documented. Absence recorded, not inferred.
+sla:
+  url: null
+  public_uptime_target: null
+  notes: No public numeric uptime SLA is published.
+status_page: https://astroprint.statuspage.io
+support: https://astroprint.zendesk.com/hc/en-us
+forum: https://forum.astroprint.com/
+deprecated_operations: []
