@@ -41,6 +41,14 @@ tags:
 - Manufacturing
 - IoT
 - Developer API
+- Authentication
+tags_raw:
+- Company
+- 3D Printing
+- Cloud
+- Manufacturing
+- IoT
+- Developer API
 - OAuth
 maintainers:
 - FN: Kin Lane
@@ -56,6 +64,10 @@ apis:
   humanURL: https://developer.astroprint.com/
   baseURL: https://api.astroprint.com/v2
   tags:
+  - 3D Printing
+  - REST
+  - Authentication
+  tags_raw:
   - 3D Printing
   - REST
   - OAuth
