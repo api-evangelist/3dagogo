@@ -64,6 +64,92 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-3DaGoGo is a company surfaced as a portfolio company of 500-global and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+3DaGoGo, Inc. is a San Diego based technology company and the maker of AstroPrint, a cloud platform for consumer and professional 3D printing. AstroPrint provides browser-based cloud slicing, AI-powered model generation from text prompts, remote WiFi printer control, live video print monitoring, print-queue management, multi-user access controls, and analytics, serving more than 260,000 users across 130+ countries with over 5 million objects printed. AstroPrint exposes an OAuth 2.0 protected REST API (api.astroprint.com/v2) plus a client-side 3D Print API so third parties can build applications on top of the platform. 3DaGoGo was surfaced as a portfolio company of 500 Global and has been enriched from its public developer surface.
 
-Backed by: 500-global — https://astroprint.com
+**Areas:** Company · 3D Printing · Cloud · Manufacturing · IoT · Developer API · Authentication
+
+## 3DaGoGo on APIs.io
+
+Everything profiled for 3DaGoGo is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/3dagogo/](https://apis.io/providers/3dagogo/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [AstroPrint Cloud API](https://apis.io/apis/3dagogo/astroprint-cloud-api/) — OAuth 2.0 protected REST API for the AstroPrint cloud 3D printing platform. Manage printers, designs, and print jobs. Confirmed live:…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [3Dagogo Authentication](https://apis.io/security/3dagogo/3dagogo-authentication/)
+- [3Dagogo Domain Security](https://apis.io/security/3dagogo/3dagogo-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.astroprint.com)
+- [Documentation](https://astroprint.github.io/3d-print-api-sample/)
+- [API reference](https://astroprint.github.io/3d-print-api-sample/)
+- [Pricing](https://www.astroprint.com/plans-and-pricing)
+- [Sign up](https://cloud.astroprint.com/account/signup)
+- [Support](https://astroprint.zendesk.com/hc/en-us)
+- [Blog](https://blog.astroprint.com/)
+- [GitHub](https://github.com/astroprint)
+- [Status](https://astroprint.statuspage.io)
+
+## API Evangelist rating
+
+**Kin Score 27.4** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 52.4 |
+| Access clarity | 23.7 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/3dagogo/](https://apis.io/providers/3dagogo/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for 3DaGoGo: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/3dagogo/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
