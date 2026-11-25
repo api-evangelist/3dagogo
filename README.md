@@ -66,7 +66,7 @@
 
 3DaGoGo, Inc. is a San Diego based technology company and the maker of AstroPrint, a cloud platform for consumer and professional 3D printing. AstroPrint provides browser-based cloud slicing, AI-powered model generation from text prompts, remote WiFi printer control, live video print monitoring, print-queue management, multi-user access controls, and analytics, serving more than 260,000 users across 130+ countries with over 5 million objects printed. AstroPrint exposes an OAuth 2.0 protected REST API (api.astroprint.com/v2) plus a client-side 3D Print API so third parties can build applications on top of the platform. 3DaGoGo was surfaced as a portfolio company of 500 Global and has been enriched from its public developer surface.
 
-**Areas:** Company · 3D Printing · Cloud · Manufacturing · IoT · Developer API · Authentication
+**Areas:** Company · 3D Printing · Cloud · Manufacturing · IoT · Developer API · OAuth · Authentication
 
 ## 3DaGoGo on APIs.io
 
@@ -84,8 +84,8 @@ Each property below is a page on APIs.io carrying the machine-readable artifact 
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [3Dagogo Authentication](https://apis.io/security/3dagogo/3dagogo-authentication/)
-- [3Dagogo Domain Security](https://apis.io/security/3dagogo/3dagogo-domain-security/)
+- [3DaGoGo Authentication](https://apis.io/security/3dagogo/3dagogo-authentication/)
+- [3DaGoGo Domain Security](https://apis.io/security/3dagogo/3dagogo-domain-security/)
 
 ## Where to find this API
 
@@ -103,16 +103,16 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 27.4** — thin · rubric 0.24.0 · scored 2026-10-17
+**Kin Score 25.6** — emerging · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
 | Discoverability | 73.2 |
 | Contract quality | 0.0 |
 | Contract governance | 18.2 |
-| Operational transparency | 18.4 |
+| Operational transparency | 19.0 |
 | Developer ergonomics | 52.4 |
-| Access clarity | 23.7 |
+| Access clarity | 19.1 |
 
 **Agent readiness 2.5** — human-only
 
@@ -137,8 +137,14 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+| MCP Tool Quality | na |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | na |
 
-**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/3dagogo/](https://apis.io/providers/3dagogo/).
 
